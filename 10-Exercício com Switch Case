@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+
+	// Escreva um algoritmo que leia dois valores numéricos e que pergunte ao usuário qual
+	// operação ele deseja realizar: adição(+), subtração(-), multiplicação(*) ou divisão(/).
+	// Exiba na tela o resultado da operação.
+
+	int x, y;
+	char op;
+
+	printf("Digite a operação desejada:\n");
+	scanf_s("%c", &op);
+
+	printf("Digite o primeiro valor:\n");
+	scanf_s("%i", &x);
+	printf("Digite o segundo valor:\n");
+	scanf_s("%i", &y);
+
+	switch (op)
+	{
+	case '+':
+		printf("O resultado da adição de %i com %i é %i.\n",x,y,x+y);
+		break;
+	case '-':
+		printf("O resultado da subtração de %i com %i é %i.\n",x,y,x-y);
+		break;
+	case '*':
+		printf("O resultado da multiplicação de %i com %i é %i.\n",x,y, x*y);
+		break;
+	case '/':
+		printf("O resultado da divisão de %i com %i é %i.\n",x,y, x/y);
+		break;
+	default:
+		printf("Opção inválida!");
+	}
+
+	
+	return 0;
+}
