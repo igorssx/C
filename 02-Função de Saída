@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+	// Como era no PYHTON
+	// print('Olá, Mundo!')
+
+	// Como é no C
+	printf("Olá, Mundo!\n");
+
+	// Comando \n para pular linha (mesmo no PYTHON)
+
+	return 0;
+}
