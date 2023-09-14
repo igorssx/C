@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+	//   Operador de atribuição
+	// idade = 35 
+	//   Operador Aritméticos
+	// 10 + 15 SOMA
+	// 10 - 15 SUBTRACAO
+	// 10 * 15 MULTIPLICACAO
+	// 10 / 15 DIVISAO
+	
+
+	return 0;
+}
