@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+
+	//  ESTRUTURA DE CONDIÇÃO IF
+
+	// if (condição){
+	// comando caso a condição seja falso
+	// }
+	
+	// else {
+	// comando caso a condição seja falso
+	// }
+
+	return 0;
+}
