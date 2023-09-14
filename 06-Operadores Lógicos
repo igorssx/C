@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+	
+	//  OPERADORES LÓGICOS
+
+	//         -   E   -  OU  -  Negação
+	// PYTHON  -  and  -  or  -  not
+	// C       -  &&   -  ||  -   !
+
+	// E - Todos devem ser verdadeiros para que seja verdadeiro
+	// OU - Ao menos um deve ser verdadeiro
+	// NOT - Nega a condição, se era verdadeiro vira falso
+
+	return 0;
+}
