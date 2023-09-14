@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+
+	//  FUNÇÃO DE ENTRADA
+
+	// Como era no PYHTON
+	// valor=input('mensagem')
+
+	//Como é no C
+	scanf_s("%i", &valor); //Somente no visual studio
+	//ou
+	scanf("%i", &valor);
+	// %i é o tipo do dado (%i-inteiro decimal, %c-caractere simples)
+	//valor é o nome da variável
+	//& indica o endereço da variável
+
+	return 0;
+}
