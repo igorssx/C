@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "portuguese");
+
+	//  Desenvolva um algoritmo que descobre se um numero é par ou impar.
+
+	int x;
+	printf("Digite um valor para conferir:\n");
+	scanf_s("%i", &x);
+
+	if (x % 2 == 0)
+	{ 
+		printf("O numero é par!\n");
+	}
+	else
+	{
+		printf("O numero é impar!\n");
+	}
+	return 0;
+}
