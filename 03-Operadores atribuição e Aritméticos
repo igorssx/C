@@ -11,7 +11,10 @@ int main()
 	// 10 - 15 SUBTRACAO
 	// 10 * 15 MULTIPLICACAO
 	// 10 / 15 DIVISAO
-	
+	// 
+	// 15++ AUMENTO (é igual a 15+1)
+	// 15-- DECREMENTO (é igual a 15-1)
 
+	// 15 % 5 MODULO (o resto de dividir 15 por 5)
 	return 0;
 }
