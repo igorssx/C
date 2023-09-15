@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+
+	// LAÇO DE REPETIÇÃO - FOR
+
+	for (inicio,condição de parada,incrementador)
+	{//codigo que deve ser repetido
+	}
+		
+	return 0;
+}
