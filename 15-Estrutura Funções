@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+
+	// FUNÇÕES
+
+	int nomeFunção(parametros)
+	{
+		return x; //comando inicial (int) deve ser o tipo de dado que vai ser retornado.
+		//para este caso um valor inteiro.
+	}
+	return 0;
+}
