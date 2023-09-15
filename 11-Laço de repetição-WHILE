@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+
+	// LAÇO DE REPETIÇÃO - WHILE
+	// Enquanto a condição for verdadeira executa o bloco.
+
+	while (condição){
+		//intrução dentro do laço
+	}
+	
+	return 0;
+}
