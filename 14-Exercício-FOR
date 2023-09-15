@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "portuguese");
+
+	// Desenvolva um algoritmo em que descobre se um numero é par ou impar.
+	// Faça este algoritmo para os 100 primeiros valores inteiros a partir de zero.
+	// Implemente com FOR
+
+	for(int x=0; x<=100; x++)
+	{
+		if (x % 2 == 0)
+		{
+			printf("O número´%i é par!\n", x);
+		}
+		else
+		{
+			printf("O número´%i é impar!\n", x);
+		}
+
+	}
+
+	return 0;
+}
