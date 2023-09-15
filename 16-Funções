@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+int ParImpar(int x);
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Desenvolva um algoritmo em que descobre se um numero é par ou impar.
+	// Faça uma função para resolver este problema retornando 1, caso seja par, 
+	// ou 0 caso seja impar.
+
+	int valor,res;
+	printf("Digite um valor: \n");
+	scanf_s("%d",&valor);
+
+	res = ParImpar(valor);
+	return 0;
+}
+
+int ParImpar(int x)  // Informar o cabeçalho da função antes da MAIN
+{
+	if (x % 2 == 0)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
