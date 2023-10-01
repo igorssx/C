@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que declare variáveis de cada um dos tipos básicos
+	// atribua valores as variáveis criadas e, em seguida, imprima seus valores.
+
+	// Variável inteira i com valor 10
+	int i = 10;
+	// Variável de ponto flutuante f com valor 12.5
+	float f = 12.5;
+	// Variável de ponto flutuante com precisão dupla d com valor 20.15
+	double d = 20.15;
+	// Variável char c com valor 'a'
+	char c = 'L';
+
+	//Exibir o valor inteiro de i
+	printf("\nO valor armazenado na variavel  é: %d",i);
+	//Exibe o valor de ponto flutuante de f
+	printf("\nO valor armazenado na variavel  é: %f",f);
+	//Exibe o valor de ponto flutuante de precisão dupla de d
+	printf("\nO valor armazenado na variavel  é: %lf",d);
+	//Exibe o caractere armazenado em c 
+	printf("\nO valor armazenado na variavel  é: %c",c);
+
+	return 0;
+}
