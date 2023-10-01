@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que peça ao usuário que insira um caractere e,
+	// em seguida, imprima o código ASCII correspondente ao caractere digitado.
+
+	char c;
+
+	// Solicita ao usuário que digite um caractere
+	printf("Digite um caractere: ");
+	// Lê o caractere digitado pelo usuário e o armazena na variável 'c'
+	scanf_s("%c", &c);
+
+	
+	// Exibe o caractere e o seu código ASCII correspondente 
+	printf("O código ASCII do caractere %c é %d. \n",c,c);
+
+
+	return 0;
+}
