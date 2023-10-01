@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que peça ao usuário que insira um número inteiro e, em seguida,
+	// imprima a tabuada desse número de 1 a 10.
+
+	int x;
+	// Solicita ao usuário que digite um caractere
+	printf("Digite um número: ");
+	// Lê o caractere digitado pelo usuário e o armazena na variável 'c'
+	scanf_s("%d", &x);
+		
+	// Exibe o caractere e o seu código ASCII correspondente 
+	printf("%i * 1 é %i.\n",x,x*1);
+	printf("%i * 2 é %i.\n", x, x*2);
+	printf("%i * 3 é %i.\n", x, x*3);
+	printf("%i * 4 é %i.\n", x, x*4);
+	printf("%i * 5 é %i.\n", x, x*5);
+	printf("%i * 6 é %i.\n", x, x*6);
+	printf("%i * 7 é %i.\n", x, x*7);
+	printf("%i * 8 é %i.\n", x, x*8);
+	printf("%i * 9 é %i.\n", x, x*9);
+	printf("%i * 10 é %i.\n", x, x*10);
+
+
+	return 0;
+}
