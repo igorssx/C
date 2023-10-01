@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que peça ao usuário que insira três números inteiros,
+	// calcule a média como um número de ponto flutuante e imprima o resultado.
+
+	int x,y,z;
+	float res;
+	// Solicita ao usuário que digite um caractere.
+	printf("Digite o primeiro número: ");
+	// Lê o caractere digitado pelo usuário e o armazena na variável.
+	scanf_s("%i", &x);
+
+	printf("Digite o segundo número: ");
+	scanf_s("%i", &y);
+	printf("Digite o terceiro número: ");
+	scanf_s("%i", &z);
+	
+
+	res = (x + y + z) / 3;
+	// Exibe a média dos numeros em float.
+	printf("A média dos números %i, %i e %i é %f.\n", x, y, z, res);
+	
+	return 0;
+}
