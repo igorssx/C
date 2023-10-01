@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <locale.h>
+
+// Função para limpar o buffer de entrada do teclado
+void clearBuffer() {
+	int k;
+	while ((k = getchar()) != '\n' && k != EOF);
+}
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que declare uma variável int e uma variável char. Atribua a eles
+	// valores fornecidos pelo usuário. Em seguida, incremente cada um várias vezes
+	// (o número de vezes também é fornecido pelo usuário) e imprima os resultados.
+
+	// Declaração das variáveis para armazenar o número inteiro
+	// o caractere e a quantidade de repetições
+	int i, n;
+	char c;
+	// Solicita ao usuário que digite o caractere.
+	printf("Digite o número inteiro: ");
+	// Lê o caractere digitado pelo usuário e o armazena na variável.
+	scanf_s("%d", &i);
+	// Limpa o buffer de entrada após a leitura do número
+	clearBuffer();
+	printf("Digite um caractere: ");
+	scanf_s("%c", &c);
+	// Limpa o buffer de entrada após a leitura do número
+	clearBuffer();
+	printf("Quantas vezes voce deseja incrementar o numero e o caractere? ");
+	scanf_s("%d", &n);
+	// Limpa o buffer de entrada após a leitura do número
+	clearBuffer();
+
+	// Loop para incrementar o número inteiro 'i' e o caractere 'c' 'n' vezes
+	for (int j = 0; j < n; j++) {
+		// Incrementa o valor do número inteiro 'i'
+		i++;
+		// Incrementa o valor do caractere 'c' (o próximo caractere na tabela ASCII)
+		c++;
+	}
+	
+	// Exibe o resultado após os incrementos
+	printf("Após incrementar %d vezes, o valor inteiro é %d e o caractere é %c.\n",n,i,c);
+	
+	return 0;
+}
