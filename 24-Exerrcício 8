@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <locale.h>
+
+// Função para limpar o buffer de entrada do teclado
+void clearBuffer() {
+	int k;
+	while ((k = getchar()) != '\n' && k != EOF);
+}
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa que declare um array (vetor) de 5 inteiros, permita que o usuário
+	// preencha esse array, e ao final imprima os números na ordem inversa.
+
+	// Declaração do array 'numeros' com espaço para armazenar 5 números inteiros
+	int numeros[5];
+	// Variável de controle do loop 'for'
+	int i;
+
+	// Solicita ao usuário que digite 5 números inteiros
+	printf("\nDigite 5 numeros inteiros:");
+
+	for (i = 0; i < 5; i++) {
+		// Solicita ao usuário que informe o número atual do loop
+		printf("\nDigite o %d número: ", i + 1);
+		// Lê o número inteiro digitado pelo usuário e o armazena no array 'numeros'
+		scanf_s("%d", &numeros[i]);
+	}
+
+	// Loop para percorrer o array 'numeros' de trás para frente (ordem inversa)
+	printf("\nOs números em ordem inversa são: ");
+	// Loop para percorrer o array 'numeros' de trás para frente (ordem inversa)
+	for (i = 5 - 1; i >= 0;i--) {
+	// Exibe o número atual do array 'numeros' no loop
+		printf("%d", numeros[i]);
+	}
+
+	return 0;
+}
