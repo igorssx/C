@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa em C que peça ao usuário que insira a base e a altura de um
+	// triângulo (números de ponto flutuante), e depois calcule e imprima a área desse triângulo.
+
+	float b,a,res;
+	// Solicita ao usuário que digite um caractere
+	printf("Digite o valor da base do triângulo: ");
+	// Lê o caractere digitado pelo usuário e o armazena na variável 'b'
+	scanf_s("%f", &b);
+
+	printf("Digite o valor da altura do triângulo: ");
+	scanf_s("%f", &a);
+
+	res = (b*a)/2
+	// Exibe a área do triângulo.
+	printf("A área do triângulo é %f.\n",res);
+	
+	return 0;
+}
