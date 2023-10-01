@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa que declare um array de 10 inteiros, preencha o array com números
+	// e 1 a 10, e então imprima a soma de todos os elementos.
+
+	// Declaração do array 'numeros' com espaço para armazenar 5 números inteiros
+	int numeros[10];
+	// Variável para armazenar a soma dos elementos do array 'numeros', inicializada com valor zero
+	int soma = 0;
+
+	// Loop 'for' para preencher o array e calcular a soma dos elementos
+	for (int i = 0; i < 10; i++) {
+		// Preenche o elemento do array na posição 'i' com o valor de 'i + 1'
+		numeros[i] = i + 1;
+	// O operador '+=' é uma forma abreviada de realizar uma adição e atribuir o
+	// resultado à variável 'soma'.
+	// É o mesmo que escrever 'soma = soma + numeros[i];', mas de forma mais concisa.
+	// Soma o valor do elemento atual do array numeros à variável soma
+		soma += numeros[i];
+	}
+	// Exibe a soma total dos elementos do array 'numeros'
+	printf("\nA soma de todos os elementos é %d.",soma);
+
+	return 0;
+}
