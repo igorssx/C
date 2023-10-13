@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+
+	// Crie um programa que declare um array de 5 números de ponto flutuante, permita que o usuário
+	// preencha o array, e então imprima o maior e o menor número.
+
+	// Declaração do array 'numeros' com espaço para armazenar 5 números inteiros
+	float numeros[5];
+	// Variáveis para armazenar o maior e o menor número do array 'numeros'
+	float max, min;
+	// Variável de controle do loop 'for'
+	int i;
+
+	// Solicita ao usuário que digite 5 números
+	printf("\nDigite 5 numeros: ");
+	for (i = 0; i < 5; i++) {
+		// Solicita ao usuário que informe o número atual do loop
+		printf("\nInforme o %d numero: ",i+1);
+		// Lê o número de ponto flutuante digitado pelo usuário e o armazena no array 'numeros'
+		scanf_s("%f", &numeros[i]);
+		// O bloco 'if-else' abaixo é utilizado para determinar o maior e o menor número enquanto
+		// o usuário insere os valores. Se for o primeiro número (i == 0), ele é atribuído tanto
+		// a 'max' quanto a 'min' por ser o único valor inserido até o momento.
+		// Caso contrário, comparamos o valor atual de 'numeros[i]' com o 'max' e o 'min',
+		// atualizando-os se necessário.
+		if (i == 0) {
+			// Define o primeiro número como o maior e o menor valor atual
+			max = min = numeros[i];
+		}
+		else {
+			if (numeros[i] > max) {
+				// Atualiza o valor de 'max' se encontrarmos um número maior
+				max = numeros[i];
+			}
+			if (numeros[i] < min) {
+				// Atualiza o valor de 'min' se encontrarmos um número menor
+				min = numeros[i];
+			}
+		}
+
+	}
+	
+	// Exibe o maior número inserido pelo usuário com duas casas decimais
+	printf("\nMaior numero: %.2f", max);
+	// Exibe o menor número inserido pelo usuário com duas casas decimais
+	printf("\nMenor numero: %.2f", min);
+
+	return 0;
+}
