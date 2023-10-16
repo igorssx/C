@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+    char nome1[30];
+    char nome2[30];
+    printf("\nInforme o primeiro nome: ");
+    gets(nome1);
+    printf("\nInforme o segundo nome: ");
+    gets(nome2);
+    // STRLEN conta os caracteres
+    printf("\nO tamanho do primeiro nome é: %i",strlen(nome1));
+    printf("\nO tamanho do segundo nome é: %i",strlen(nome2));
+    return 0;
+}
