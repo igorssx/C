@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main() {
+//Define que a variável pode armazenar até 5 caracteres úteis
+	char amigo[6] = {'P','e','d','r','o','\0'};
+	
+	printf("\nO amigo se chama: %s\n",amigo);
+
+	return 0;
+}
