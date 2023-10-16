@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+    //Vetor fruta
+	char fruta[10];
+    //Copiando abacaxi para vetor fruta
+    strcpy(fruta, "Abacaxi");
+    printf("\n");
+    printf("A fruta é %s.",fruta);
+    printf("\n");
+	return 0;
+}
