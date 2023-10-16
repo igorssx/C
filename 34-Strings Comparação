@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+	int retorno=0;
+    char nome1[30];
+    char nome2[30];
+    printf("\nInforme o primeiro nome: ");
+    gets(nome1);
+    printf("\nInforme o segundo nome: ");
+    gets(nome2);
+    // para comparar strings
+    retorno = strcmp(nome1,nome2);
+    printf("\n");
+    if (retorno==0){
+        printf("Os nomes são iguais!");
+    }   else {
+        printf("Os nomes são diferentes!");
+        }
+    printf("\n");
+	return 0;
+}
