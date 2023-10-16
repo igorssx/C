@@ -7,6 +7,7 @@ int main(){
 	printf("\nInforme o nome do livro: ");
 	// fgets recebe string e tem limitador de tamanho.
 	fgets (livro, 30, stdin);
+	//stdin para limpar buffer do teclado em C
 	printf("\nO nome do livro é %s ",livro);
 	printf("\n\n");
 
