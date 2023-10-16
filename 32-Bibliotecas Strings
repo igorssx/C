@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+// Funçoes para manipular strings
+// Biblioteca string.h
+// strcpy()
+// strcat()
+// strcmp()
+// strlen()
+// Biblioteca ctype.h (caracter por caracter)
+// toupper()
+// tolowe()
+
+	return 0;
+}
