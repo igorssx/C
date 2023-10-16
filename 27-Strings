@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main() {
+	char nome[5] = { 'J','o','a','o' };
+
+	// Ou
+	// char(int)0 = "Joao";
+
+	return 0;
+}
