@@ -5,6 +5,7 @@
 int main() {
 	char nome[5] = { 'J','o','a','o' };
 
+	// \0 para finalizar
 	// Ou
 	// char(int)0 = "Joao";
 
