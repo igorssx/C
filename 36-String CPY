@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+    char nome[30];
+    char func[30];
+    printf("\nInforme o nome do funcionário: ");
+    gets(func);
+    strcpy(nome, func);
+    printf("\n");
+    printf("O nome do(a) funcionário(a) é %s.",nome);
+    printf("\n");
+	return 0;
+}
