@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+int main(){
+	char livro[30];
+	printf("\nInforme o nome do livro: ");
+	// fgets recebe string e tem limitador de tamanho.
+	fgets (livro, 30, stdin);
+	printf("\nO nome do livro é %s ",livro);
+	printf("\n\n");
+
+	return 0;
+}
