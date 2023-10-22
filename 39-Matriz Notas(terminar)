@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    //   2 LINHA e 4 COLUNA
+    float notas[2][4], total = 0;
+    int i, nt;
+
+    for (i = 0; i < 2; i++) {
+        for (nt = 0; nt < 4; nt++) {
+            notas[i][nt] = 0;
+        }
+    }
+
+    //Inclusão das notas
+    for (i = 0; i < 2; i++) {
+        printf("\nInforme as notas do %d aluno: ".i + 1);
+        total = 0;
+
+        for (nt = 0; nt < 4; nt++) {
+            printf("Informe a %da nota: ", nt + 1);
+            scanf("%f", &notas[i][nt]);
+            total = total + notas[i][nt];
+        }
+        notas[i][3] = total / 3;
+    }
+
+    printf ("\nNotas do %do Aluno:");
+    printf ("\n%da nota: ")
+    return (0);
+}
