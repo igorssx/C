@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	char letra = 's';
+	int idade = 35;
+	char nome[10] = "Alberto";
+	float altura = 1.82;
+
+	printf("Exibindo o endereço de memória de variáveis\n\n");
+	// & indica que estamos trabalhando com o endereço da memória
+	printf("Valor letra eh %c e o endereço eh %p\n", letra, &letra);
+	printf("Idade eh %d e o endereço eh %p\n", idade, &idade);
+	printf("Valor de nome eh %s e o endereço eh %p\n", nome, nome);
+	// %x Mostra em hexadecimal
+	printf("Altura eh %1.2f e o endereço eh %x\n\n", altura, &altura);
+	return(0);
+}
