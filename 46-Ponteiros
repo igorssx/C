@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+	int x = 0, a = 5, b = 2, *ptr; //* é o conteudo do ponteiro
+	ptr = &a;
+	(*ptr)++;
+	printf("\nValor de a: %i", a);
+	b = (*ptr) + 1;
+	printf("\nValor de b: %i", b);
+	*ptr = (*ptr) + 10;
+	printf("\nValor de a: %i", a);
+	x = (*ptr) * b;
+	printf("\nValor de a: %i", x);
+	x = (((*ptr) + b)) * (*ptr);
+	printf("\nValor de a: %i", x);
+	return 0;
+}
