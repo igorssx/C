@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct empregado {
+	int matricula;
+	char nome[100];
+	float salario;
+} emp;
+
+int main() {
+	printf("\nstruct %d ", sizeof(emp));
+	printf("\nmatricula: %d ", sizeof(emp.matricula));
+	printf("\nnome: %d ", sizeof(emp.nome));
+	printf("\nsalario: %d ", sizeof(emp.salario));
+	printf("\n\n");
+	return (0);
+}
