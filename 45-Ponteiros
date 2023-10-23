@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+	int cod = 123;//Declaração de variável e atribuição de valor.
+	int* ptrcod = &cod;//Atribui o endereço de cod para o ponteiro.
+	int valor = *ptrcod; //Atribui o conteúdo que o ponteiro aponta.
+
+	printf("\nResultado:\n\n");
+	printf("Valor de cod................: %d\n", cod);
+	printf("Conteudo apontado por ptrcod: %i\n", *ptrcod);//exibe o valor que ptrcod aponta atravez do ponteiro.
+	printf("Endereco de cod.............: %p\n", &cod);//endereço fisico de cod.
+	printf("Endereço apontado por ptrcod: %p\n", ptrcod);//endereço apontando para a variavel cod
+	printf("Conteudo de valor...........: %i\n\n", valor);//apresenta o conteudo da variavel valor
+	return(0);
+}
