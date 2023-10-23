@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct livro {
+	int codigo;
+	char titulo[50];
+	char autor[50];
+	int ano_lancamento;
+	char isbn[14];
+} exemplar; //variavel do tipo struct
+
+int main() {
+	struct livro(*ponteiro) = &exemplar;
+
+	printf("\n*** Recebendo dados ***\n");
+	printf("\nCodigo ...: ");
+	scanf_s("%d", &(*ponteiro).codigo);
+
+	print("\nTítulo ...: ");
+	fflush(stdin);
+	gets((*ponteiro).titulo);
+
+	printf("\nAutor ...: ");
+	fflush(stdin); // FFLUSH limpa o buffer do teclado!
+	gets((*ponteiro).autor);
+
+	printf("\nLançamento ...: ");
+	fflush(stdin);
+	gets((*ponteiro).ano_lancamento);
+
+	printf("\nISBN ...: ");
+	fflush(stdin);
+	gets((*ponteiro).isbn);
+
+	printf("\n*** Apresentando dados ***\n");
+	printf("\nCodigo ...: %d\n", (*ponteiro).codigo);
+	printf("\nTítulo ...: %s\n", (*ponteiro).titulo);
+	printf("\nAutor ....: %s\n", (*ponteiro).autor);
+	printf("\nLançamento: %d\n", (*ponteiro).ano_lancamento);
+	printf("\nISBN .....: %s\n", (*ponteiro).isbn);
+
+	return (0);
+}
