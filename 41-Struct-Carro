@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+struct carro {
+	char  chassi[18];
+	char  modelo[30];
+	char  marca[30];
+	char  combustivel[20];
+	char  cor[20];
+	int   nro_portas;
+	int   ano_modelo;
+	int   ano_fabricacao;
+	float preco;
+};
+
+int main() {
+	//Outra maneira de declarar a variavel da struct
+	struct carro c;
+	printf("\nstruct %d ", sizeof(c));
+	printf("\nChassi: %d ", sizeof(c.chassi));
+	printf("\n\n");
+	return (0);
+}
