@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct exemplo {
+	int var_a;
+	int var_b;
+};
+
+int main() {
+	//Outra maneira de declarar a variavel da struct
+	struct exemplo ex = {15, 9 };
+	printf("\n%d ", ex.var_a);
+	printf("\n%d ", ex.var_b);
+	printf("\n\n");
+	return (0);
+}
