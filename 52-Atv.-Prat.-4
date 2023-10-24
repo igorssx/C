@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h> //biblioteca p
+
+double somaQuadrados(double leituras[], int tamanho, int indice); //protótipo da função
+
+int main() {
+	int n, cont;
+	double sum, media;
+
+	printf("Digite o numero de leituras: ");//mensagem para inserir leituras
+	scanf_s("%d", &n); //Entrada do numero de leituras
+
+	double* leituras = (double*)malloc(n * sizeof(double)); //alocar dinamicamente memória
+	
+	for (cont = 0; cont < n; cont++) {//para iniciar as entradas baseado no numero de leituras
+		printf("Digite a leitura %d: ", cont+1);
+		scanf_s("%lf", &leituras[cont]);//Entrada do numero de leituras
+	}
+	
+	sum = somaQuadrados(leituras, n, 0);//soma de cada digito das leituras
+	media = sum / n;//media da soma dividido pelo numero de entradas
+
+	printf("O valor RMS do sinal é: %1.2lf", media);//mensagem final
+
+	free(leituras); //liberar memória
+
+	return 0;
+}
+
+double somaQuadrados(double leituras[], int tamanho, int indice) {
+	if (indice == tamanho) {
+		return(0);
+	}
+	return leituras[indice] + somaQuadrados(leituras, tamanho, indice + 1);
+}
