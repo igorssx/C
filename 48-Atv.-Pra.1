@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h> //biblioteca de strings
+
+
+struct estudante { // Estrutura estudante
+	char nome[100]; // variavel de caracter chamada nome
+	int ru[7]; // variavel inteira chamada ru
+}; //Variavel do tipo stuct
+
+int main() {
+	struct estudante e;
+	struct estudante *ponteiro = &e; //Endereço para ponteiro
+
+	printf ("\nNome: "); //Mensagem na tela do usuário solicitando o Nome
+	gets_s (e.nome,99); //coleta entrada do usuario e salva na variavel
+	
+	for (i = 0; i < 7; i++) {
+		printf("O %d digito do RU: ", i + 1); //Mensagem na tela do usuário solicitando o RU
+		scanf_s("%d", &e.ru[i]); // Coleta entradaa e salva na variavel RU
+	}
+
+	if (ponteiro->ru[6] % 2 == 0) { //Condicional para teste par ou impar
+		printf("\nO RU é par."); // mostra mensagem se for par
+	}
+	else {
+		printf("\nO RU é impar.\n");// mostra mensagem se for impar
+	}
+	
+	printf("Nome invertido: %s\n\n", &e.nome); // mostra o nome invertido
+		
+	return (0);
+}
