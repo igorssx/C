@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h> //Biblioteca matemática
+
+void calc_penta(float l, float*area, float*perimetro);
+
+int main() {
+	float lado, area, perimetro; // declara 3 variaveis tipo float
+
+	do { // faz
+		printf("Lado do Pentgono: "); //mostra mensagem
+		scanf_s("%f", &lado);// pega a entrada e aloca na variavel lado
+		
+		if (lado >= 0) { // se o lado for maior ou igual a 0
+			calc_penta(lado, &area, &perimetro); //utiliza a formula com os valores e armazena area e perimetro 
+			printf("\n\nArea do pentagono: %1.4f", area);//mostra resultado da area com 4 casas depois da virgula
+			printf("\n\nPerímetro do pentagono: %1.f", perimetro);//mostra o resultado do perimetro
+		}
+		
+	} while (lado >= 0);
+
+	return(0);
+}
+void calc_penta(float l, float* area, float* perimetro) {
+	*area = (5 * l * l) / (4 * (tan(3.1415 / 5)));
+	* perimetro = 5 * l;
+}
