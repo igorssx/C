@@ -1,0 +1,43 @@
+#include <stdio.h> 
+
+#include <stdlib.h> 
+
+  
+
+int main() { 
+
+	int ru[7]; 
+
+	int i, produto = 1; 
+
+	int* ptr = &ru; 
+
+	int 8ptr = &produto; 
+
+  
+
+  
+
+	for (i = 0; i < 7; i++) { 
+
+		printf("O %d digito do RU: ", i + 1); //Mensagem na tela do usuário solicitando o RU 
+
+		scanf_s("%1d", &ru[i]); // Coleta entradaa e salva na variavel RU 
+
+	} 
+
+	for (i = 0; i < 7; i++) { 
+
+		produto = produto * (ptr.ru[i]); 
+
+	} 
+
+  
+
+	printf("Produto dos dígitos do RU: %d", ptr.produto); 
+
+  
+
+	return(0); 
+
+} 
